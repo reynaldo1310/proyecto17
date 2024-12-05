@@ -1,5 +1,9 @@
-document.getElementById('boton').onclick = function() {
-    alert('Me has presionado... me voy de vacaciones a relajarme');
-}
+$(document).ready(function() {
+    accionParaElClick = function(event) {
+        $(this).text("Bémeme");
+    }
 
-console.log('Hola mundo... por segunda vez');
+    $("button").on("click", accionParaElClick);
+
+    console.log('Hola mundo... por tercera vez');
+});
