@@ -35,6 +35,7 @@ $(function() {
     });
 
     $('#actualizar').on('click', function(){
+        $(this).addClass('mio')
         $.ajax({
             url: "https://my-json-server.typicode.com/desarrollo-seguro/proyecto17/solicitudes/2",
             method: "PUT",
