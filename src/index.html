@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi aplicación</title>
+    
     <!-- Optional theme -->
     <link rel="stylesheet" href="./css/mistyle.css">    
 
@@ -16,22 +17,52 @@
 </head>
 
 <body>
-    <button id="listar" class="btn btn-primary">Listar</button>
-    <div id="resListar"></div>
-    <button id="leer">Leer</button>
-    <div id="resLeer" ></div>
-    <button id="crear">Crear</button>
-    <div id="resCrear"></div>
-    <button id="actualizar">Actualizar</button>
-    <div id="resActualizar"></div>
-    <button id="borrar">Borrar</button>
-    <div id="resBorrar"></div>
+    <div class="container">
+        
+        <!-- Fila 1: Tres botones en la parte superior -->
+        <div class="row">
+            <!-- Columna para el botón Listar -->
+            <div class="col-xs-12 col-md-4">
+                <button id="listar" class="btn btn-primary">Listar</button>
+                <div id="resListar"></div>
+            </div>
+
+            <!-- Columna para el botón Leer -->
+            <div class="col-xs-12 col-md-4">
+                <button id="leer" class="btn btn-success">Leer</button>
+                <div id="resLeer"></div>
+            </div>
+
+            <!-- Columna para el botón Crear -->
+            <div class="col-xs-12 col-md-4">
+                <button id="crear" class="btn btn-info">Crear</button>
+                <div id="resCrear"></div>
+            </div>
+        </div>
+
+        <!-- Fila 2: Tres botones en la parte inferior -->
+        <div class="row">
+            <!-- Columna para el botón Actualizar -->
+            <div class="col-xs-12 col-md-4">
+                <button id="actualizar" class="btn btn-success">Actualizar</button>
+                <div id="resActualizar"></div>
+            </div>
+
+            <!-- Columna para el botón Borrar -->
+            <div class="col-xs-12 col-md-4">
+                <button id="borrar" class="btn btn-primary">Borrar</button>
+                <div id="resBorrar"></div>
+            </div>
+
+            <!-- Columna para el enlace "El Mundo" -->
+            <div class="col-xs-12 col-md-4">
+                <a href="http://www.elmundo.es" class="btn btn-default" role="button">El mundo</a>
+            </div>
+        </div>
+    
 
     <script src="./javascript/index.js"></script>
 
-    <hr>
-
-    <a href="http://www.elmundo.es" class="btn btn-default" role="button">El mundo</a>
 </body>
 
 </html>
